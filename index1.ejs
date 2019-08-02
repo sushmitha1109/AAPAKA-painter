@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+ <html lang="en"> 
+
+<head>
+<meta charset="UTF-8"> 
+<title>Lead Management </title>
+</head>
+        
+	
+  	<body>
+
+  		<div class="header">
+        <h1>Inserting Form Data</h1>
+        <p>With Mysql</p>       
+    </div>
+
+  	
+  	<form action="/data" method="post">
+		
+	<label>
+		USERNAME:
+		<p><input type="name" name="name" ></p>
+	</label>	
+	<label>
+		PHONE NO:
+		<p><input type="Number" name="Number" ></p>
+	</label>
+	
+	<lable>
+		EMAIL:
+		<p><input type="Email" name="Email" ></p>
+	</lable>
+	
+	<label>
+		ADDRESS:
+		<p><input type="Address" name="Address"></p>
+	</label>
+	
+
+	<label>
+		DOB:
+		<p><input type="DOB" name="DOB" ></p>
+     </label>
+
+      <select class="form-control" id="sel1">
+      <% for(var i=0; i < dropdownVals.length; i++) { %>
+       <option><%= dropdownVals[i] %></option>
+      <% } %>
+      </select>
+
+     <input type="submit" value="submit"/>
+
+   </form>   
+
+    	<div class="container"></div>
+       	
+       	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
